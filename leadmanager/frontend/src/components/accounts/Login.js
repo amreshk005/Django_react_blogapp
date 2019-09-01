@@ -42,6 +42,7 @@ export class Login extends Component {
                 value={username}
               />
             </div>
+
             <div className="form-group">
               <label>Password</label>
               <input
@@ -52,6 +53,7 @@ export class Login extends Component {
                 value={password}
               />
             </div>
+
             <div className="form-group">
               <button type="submit" className="btn btn-primary">
                 Login
@@ -66,11 +68,9 @@ export class Login extends Component {
     );
   }
 }
-
 const mapStateToProps = state => ({
   isAuthenticated: state.auth.isAuthenticated
 });
-
 export default connect(
   mapStateToProps,
   { login }

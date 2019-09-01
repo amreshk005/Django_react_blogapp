@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import { logout } from "../../actions/auth";
 
 export class Header extends Component {
-  static PropTypes = {
+  static propTypes = {
     auth: PropTypes.object.isRequired,
     logout: PropTypes.func.isRequired
   };
